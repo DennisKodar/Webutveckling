@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is an audio player that should play a file</h1>
+    <audio controls>
+        <source src="media/audio.mp3" type="audio/mp3">
+        <p>
+            Your browser doesn't support this audio file, Here is a
+            <a href="media/audio.mp3"> link to the audio</a> instead
+        </p>
+    </audio>
+    <br>
+    <h1>This is a video player that hopefully works</h1>
+    <video controls muted width="320" height="240">
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.webm" type="video/webm">
+        <track kind="subtitles" src="media/subtiles_en.vtt" srclang="en" label="English" >
+        <p>
+            Your browser doesn't support this video. Here is a
+            <a href="media/video.mp4">link to the video</a> instead.
+        </p>
+    </video>
+    <br>
+    <h1>The iframe actually works I believe</h1>
+    <iframe src="media/mypdf.pdf" width="400" height="400"></iframe>
+    <br>
+    <h1>Here is some polish music</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zecnwqXe850?si=d5a0eWPorraSxRHi" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
