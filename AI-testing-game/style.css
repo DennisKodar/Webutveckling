@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #70c5ce; /* Sky-blue background */
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .game-container {
+    position: relative;
+    margin-bottom: 20px; /* Space between canvas and control box */
+  }
+  
+  canvas {
+    border: 2px solid black;
+    background-color: #87cefa; /* Light sky-blue canvas background */
+  }
+  
+  #controlsBox {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  #controlsBox h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  #controlsBox ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #controlsBox li {
+    margin: 10px 0;
+  }
+  
