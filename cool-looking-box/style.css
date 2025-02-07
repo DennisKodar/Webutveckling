@@ -1,0 +1,23 @@
+html {
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  
+  body{
+    text-align: center;
+  }
+
+  #box{
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    background-color: rgb(152, 113, 224);
+    color: rgb(45, 248, 113);
+    text-shadow: 0.2rem 0.2rem 0.1rem rgb(20, 75, 39);
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgb(105, 79, 148);
+    background: linear-gradient(45deg, blue, red);
+    }
+    
+  /* Your CSS below here */
+  
