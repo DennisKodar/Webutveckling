@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevuppgift - CSS Layout och Textstyling</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>CSS Layout och Textstyling</h1>
-    <p>Instruktioner: Du ska styla tre lådor enligt dina tilldelade tekniker nedan.</p>
-    <div class="container">
-        <div class="box box1">Låda 1</div>
-        <div class="box box2">Låda 2</div>
-        <div class="box box3">Låda 3</div>
-        <div class="box box4">Låda 4</div>
-        <div class="box box5">Låda 5</div>
-        <div class="box box6">Låda 6</div>
-        <div class="box box7">Låda 7</div>
-    </div>
-</body>
-</html>
 
 /* CSS för elevuppgift - Layout och Textstyling */
 
 /* Grundläggande styling för alla boxar */
 .container {
     /* Lägg till container styling */
+    
 }
 
 .box {
@@ -45,13 +24,16 @@
 /* Elis - Position: absolute; Textstyling: bold, text-shadow */
 /* Tips: Placera lådorna fritt inom .container, men se till att .container har position: relative;. */
 .box1 {
-    /* Lägg till styling här */
+    position: absolute;
+    top: 220px; left: 300px;
 }
 .box4 {
-    /* Lägg till styling här */
+    position: absolute;
+    top: 80px; left: 80px;
 }
 .box5 {
-    /* Lägg till styling här */
+    position: absolute;
+    top: 400px; left: 400px;
 }
 
 /* Ibra - Position: relative; Textstyling: letter-spacing, uppercase */

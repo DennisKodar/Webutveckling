@@ -1,4 +1,190 @@
-.header-flex{
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex; /* Enable Flexbox for the navigation */
+    justify-content: center; /* Center the navigation items horizontally */
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Make the list items flex items */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 810px){
+    nav ul{
+        flex-direction: column;
+        font-size: 2rem;
+    }
+}    
+
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #8f1818;
+}
+
+nav ul li a.current-page {
+    font-weight: bold;
+    /* Add other styles to highlight the current page */
+}
+
+section{
+    
+    height: 70vh;
+}
+
+.hero {
+    color: #fff; /* Adjust as needed */
+    min-height: 8vh; /* Adjust initial height as needed */
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.hero-content {
+    align-self: center;
+    padding-right: 25%;
+    border-radius: 8px;
+    max-width: 40%; /* Limit text width */
+    z-index: 1; /* Ensure text content is above the image */
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Adjust title size */
+    margin-bottom: 0.2rem;
+}
+
+.hero p {
+    font-size: 1.2em; /* Adjust subtitle size */
+    margin-bottom: 20px;
+    color: #a7a4a4;
+}
+
+.hero-button {
+    display: inline-block;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #c40812;
+}
+
+.berlin-hero{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    background-image: url(berlinassets/berlinmissionpic.png);
+    background-size: cover;
+}
+
+.chongqing-hero{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(chongqingassets/chongqingmissionpic.png);
+    background-size: cover;
+}
+
+.dubai-hero{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(dubaiassets/dubaimissionpic.png);
+    background-size:cover;
+}
+
+.hokkaido-hero{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(hokkaidoassets/hokkaidomissionpic.png);
+    background-size: cover;
+}
+
+.miami-hero{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(miamiassets/miamimissionpic.png);
+    background-size: cover;
+}   
+.features {
+    margin-top: 20px;
+}
+
+.feature-container {
+    display: flex; /* Enable Flexbox for the feature items container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between feature items */
+    justify-content: center; /* Center items horizontally */
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 300px; /* Initial preferred width */
+    flex-grow: 1; /* Allow items to grow to fill available space */
+    /* flex-shrink: 1; /* Default: Allow items to shrink if needed */
+}
+
+.feature-item img,
+.feature-item picture {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }

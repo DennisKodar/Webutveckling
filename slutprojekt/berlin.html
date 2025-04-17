@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Berlin Showcase</title>
     <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <header class="header-flex">
-        <a href="index.html">Home</a>
-        <a href="hokkaido.html">Hokkaido</a>
-        <a href="miami.html">Miami</a>
-        <a href="dubai.html">Dubai</a>
-        <a href="berlin.html">Berlin</a>
-        <a href="chongqing.html">Chongqing</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="berlin.html" class="current-page">Berlin</a></li>
+                <li><a href="chongqing.html">Chongqing</a></li>
+                <li><a href="dubai.html">Dubai</a></li>
+                <li><a href="hokkaido.html">Hokkaido</a></li>
+                <li><a href="miami.html">Miami</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <img src="berlinassets/berlinmissionpic.png">
+        <section class="hero berlin-hero">
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Berlin</h1>
+                <p class="hero-subtitle">Explore the gritty nightlife and underground rave scene of Berlin.</p>
+                <a href="#" class="hero-button">Learn More +</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-container">
+                <div class="feature-item">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="berlin/assets/feature_1_small.jpg">
+                        <img src="berlin/assets/feature_1_large.jpg" alt="Feature 1">
+                    </picture>
+                    <h3>The ICA Facility</h3>
+                    <p>Infiltrate the abandoned ICA facility turned biker gang hideout.</p>
+                </div>
+                </div>
+        </section>
+
     </main>
+
+    <footer>
+        <p><a href="index.html">Back to Main</a></p>
+    </footer>
 </body>
 </html>
